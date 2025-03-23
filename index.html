@@ -12,15 +12,54 @@
         <p>Desenvolvendo com prática e dedicação</p>
     </header>
     <main>
-        <div class="gallery">
-            <!-- Espaço para as fotos -->
-             <div class="photo">
-                <img src="https://ibb.co/VphcWD3t" alt="">
+        <!-- Seção de Formulário -->
+        <section id="formulario">
+            <h2>Enviar uma Foto</h2>
+            <form action="">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="link">Link da Foto</label>
+                <input type="url" id="link" placeholder="Cole o link da sua foto" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!-- Seção de Links -->
+         <section id="links">
+            <h2>Minhas Redes e Outros Links</h2>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+         </section>
+         <!-- Seção de Galeria -->
+          <section id="galeria">
+            <h2>Minha Galeria de Fotos</h2>
+            <div class="gallery">
+                <!-- Espaço para as fotos -->
+                 <div class="photo">
+                    <img src="img/foto-1.jpg" alt="Primeira Foto">
+                </div>
+                 <div class="photo">
+                    <img src="img/foto-2.jpg" alt="Segunda Foto">
+                </div>
+                <div class="photo">
+                    <img src="img/foto-3.jpg" alt="Terceira Foto">
+                </div>
+                <div class="photo">
+                    <img src="img/foto-4.jpg" alt="Quarta Foto">
+                </div>
+                 <div class="photo">
+                    <img src="img/foto-5.jpg" alt="Quinta Foto">
+                </div>
+                <div class="photo">
+                    <img src="img/foto-6.jpg" alt="Sexta Foto">
+                </div>
             </div>
-             <div class="photo">
-                <img src="https://ibb.co/BH8wsWDb" alt="">
-            </div>
-        </div>
+             <!-- Adicione mais divs conforme necessário -->
+          </section>
     </main>
     <footer>
         <p>Desenvolvido por Sergio | Criado com Paixão 💡</p>
