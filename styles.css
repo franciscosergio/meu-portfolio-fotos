@@ -1,0 +1,40 @@
+body{
+    font-family: Aria, sans-rerif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header{
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.photo{
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+.photo img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
