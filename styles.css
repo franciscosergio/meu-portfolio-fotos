@@ -38,6 +38,16 @@ header{
     color: #007BFF;
 }
 
+@media(max-width: 768){
+    .social-links li a {
+        color: #007BFF;
+    }
+
+    h2 {
+        color: #007BFF;
+    }
+}
+
 .gallery{
     display: flex;
     justify-content: center;
@@ -63,7 +73,7 @@ header{
     transition: transform 0.3s ease;
 }
 
-photo:hover{
+.photo:hover{
     transform: scale(1.1)
 }
 
