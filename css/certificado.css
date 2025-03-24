@@ -1,0 +1,33 @@
+#certificados {
+    padding: 20px;
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
+.certificados-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificado {
+    border: 1px solid #DDD;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certificado h3 {
+    color: #007BFF;
+}
+
+.certificado a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.certificado a:hover {
+    color: #007BFF;
+}

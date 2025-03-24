@@ -1,0 +1,17 @@
+form {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    width: 97.6%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 99%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
