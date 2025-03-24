@@ -31,8 +31,26 @@
                 <label for="link">Link da Foto</label>
                 <input type="url" id="link" placeholder="Cole o link da sua foto" required>
 
+                <label for="categoria">Categoria</label>
+                <select id="categoria" required>
+                    <option value="animais">Animais</option>
+                    <option value="pessoas">Pessoas</option>
+                    <option value="paisagens">Paisagens</option>
+                </select>
                 <button type="submit">Enviar</button>
             </form>
+            <sectio id="galeria-animais">
+                <h2>Galeria de Animais</h2>
+                <div class="fotos-animais"></div>
+            </sectio>
+            <section id="galeria-pessoas">
+                <h2>Galeria de Pessoas</h2>
+                <div class="fotos-pessoas"></div>
+            </section>
+            <section id="galeria-paisagens">
+                <h2>Galeria de Paisagens</h2>
+                <div class="fotos-paisagens"></div>
+            </section>
         </section>
         <!-- Seção de Links -->
          <section id="links">

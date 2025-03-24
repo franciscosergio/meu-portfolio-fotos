@@ -103,3 +103,27 @@
 #close-lightbox:hover {
     color: red;
 }
+
+section{
+    margin: 20px;
+    padding: 20px;
+    border: 1px soli #DDD;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+section h2 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.fotos-animais, .fotos-pessoas, .fotos-paisgens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.fotos-animais img, .fotos-pessoas img, .fotos-paisgens img {
+    border: 2px solid #CCC;
+    border-radius: 5px;
+}
