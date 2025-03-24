@@ -58,6 +58,11 @@ footer{
     color: white;
 }
 
+#lightbox.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
 #lightbox {
     position: fixed;
     top: 0;
@@ -71,7 +76,12 @@ footer{
     z-index: 10;
     visibility: hidden;
     opacity: 0;
-    transition: opcity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 #lightbox img{
@@ -80,10 +90,6 @@ footer{
     border-radius: 10px;
 }
 
-#lightbox.visible {
-    visibility: visible;
-    opacity: 1;
-}
 
 #close-lightbox {
     position: absolute;
@@ -91,5 +97,11 @@ footer{
     right: 30px;
     color: white;
     font-size: 2em;
+    font-weight: bold;
     cursor: pointer;
+    z-index: 20;
+}
+
+#close-lightbox:hover {
+    color: red;
 }
