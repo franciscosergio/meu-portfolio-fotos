@@ -2,10 +2,24 @@ body{
     font-family: Aria, sans-rerif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #F8F9FA;
+    color: #212529;
+    font-family: 'Poppins', sans-serif;
 }
 
+h2 {
+    color: #007BFF;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #FFD700;
+}
 header{
     background-color: #007BFF;
     color: white;
@@ -31,6 +45,15 @@ header{
     gap: 15px;
 }
 
+.gallery .photo img {
+    transition: transform 0.3s eas, box-shadow 0.3s eas;
+}
+
+.gallery .photo img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
 .photo{
     width: 200px;
     height: 200px;
@@ -51,12 +74,6 @@ photo:hover{
     border-radius: 10px;
 }
 
-footer{
-    text-align: center;
-    padding: 10px;
-    background-color: #343a40;
-    color: white;
-}
 
 #lightbox.hidden {
     visibility: hidden;
@@ -104,4 +121,33 @@ footer{
 
 #close-lightbox:hover {
     color: red;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+.social-links {
+    list-style-type: none; /* Remover os marcadores */
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s eas;
+}
+
+.social-links li a:hover {
+    color: #FFD700;
 }
