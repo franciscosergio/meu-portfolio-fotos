@@ -4,8 +4,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     
     const nome = document.getElementById('nome').value.trim();
-    const link = document.getElementById('link').value.trim();
     const categoria = document.getElementById('categoria').value;
+    const link = document.getElementById('link').value.trim();
    
 
     if(!nome){

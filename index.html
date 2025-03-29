@@ -21,37 +21,6 @@
         <p>Desenvolvendo com prática e dedicação</p>
     </header>
     <main>
-        <!-- Seção de Formulário -->
-        <section id="formulario">
-            <h2>Enviar uma Foto</h2>
-            <form action="">
-                <label for="nome">Seu nome</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-                <label for="link">Link da Foto</label>
-                <input type="url" id="link" placeholder="Cole o link da sua foto" required>
-
-                <label for="categoria">Categoria</label>
-                <select id="categoria" required>
-                    <option value="animais">Animais</option>
-                    <option value="pessoas">Pessoas</option>
-                    <option value="paisagens">Paisagens</option>
-                </select>
-                <button type="submit">Enviar</button>
-            </form>
-            <sectio id="galeria-animais">
-                <h2>Galeria de Animais</h2>
-                <div class="fotos-animais"></div>
-            </sectio>
-            <section id="galeria-pessoas">
-                <h2>Galeria de Pessoas</h2>
-                <div class="fotos-pessoas"></div>
-            </section>
-            <section id="galeria-paisagens">
-                <h2>Galeria de Paisagens</h2>
-                <div class="fotos-paisagens"></div>
-            </section>
-        </section>
         <!-- Seção de Links -->
          <section id="links">
             <h2>Minhas Redes e Outros Links</h2>
@@ -62,6 +31,7 @@
                 <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i>Linkedin</a></li>
             </ul>
          </section>
+
          <!-- Seção de Galeria -->
           <section id="galeria">
             <h2>Minha Galeria de Fotos</h2>
@@ -90,9 +60,36 @@
             <div id="lightbox" class="hidden">
                <span id="close-lightbox">&times;</span>
                <img src="" alt="Imagem ampliada" id="lightbox-img">
-            </div>
+            </div>            
+        </section>
 
-            
+        <!-- Seção de Formulário -->        
+        <section id="formulario">
+            <h2>Enviar uma Foto</h2>
+
+            <form action="/galeria" method="POST">
+                <input type="text" id="nome" name="nome">
+                <input type="text" id="autor" name="autor" placeholder="Digite seu nome" required>
+                <input type="url" id="link" name="link" placeholder="Cole o link da sua foto" required>
+                <select id="categoria" name="categoria" required>
+                <option value="animais">Animais</option>
+                <option value="pessoas">Pessoas</option>
+                <option value="paisagens">Paisagens</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="galeria-animais">
+            <h2>Galeria de Animais</h2>
+            <div class="fotos-animais"></div>
+        </section>
+        <section id="galeria-pessoas">
+            <h2>Galeria de Pessoas</h2>
+            <div class="fotos-pessoas"></div>
+        </section>
+        <section id="galeria-paisagens">
+            <h2>Galeria de Paisagens</h2>
+            <div class="fotos-paisagens"></div>
         </section>
         <section id="certificados">
             <h2>Certificados e Conquistas</h2>
@@ -100,14 +97,21 @@
                 <div class="certificado">
                     <h3><i class="fab fa-html5"></i> HTML5 e <i class="fab fa-css3"></i>CSS3: Avançado </h3>
                     <p>Emitido por: Curso em video</p>
-                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=51689&cert-nonce=0054dc3dfa">HTML5 e CSS3: Módulo 1</a>
-                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=59254&cert-nonce=e6c2d7e000">HTML5 e CSS3: Módulo 2</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=51689&cert-nonce=0054dc3dfa" target="_blank">HTML5 e CSS3: Módulo 1</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=59254&cert-nonce=e6c2d7e000" target="_blank">HTML5 e CSS3: Módulo 2</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=82704&cert-nonce=b030ab2e13" target="_blank">HTML5 e CSS3: Módulo 3</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=156702&cert-nonce=4ffec655f4" target="_blank">HTML5 e CSS3: Módulo 4</a>
+                </div>
+                <div class="certificado">
+                    <h3><i class="fab fa-javascript"></i>JavaScript</h3>
+                    <p>Emitido por: Curso em video</p>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=27745&cert-nonce=ba65d06a9f" target="_blank">JavaScript</a>
                 </div>
                 <div class="certificado">
                     <h3><i class="fab fa-python"></i> Pytho3: Desenvolvimento</h3>
                     <p>Emitido por: Curso em video</p>
-                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=26338&cert-nonce=08878a958d">Python3: Módulo 1</a>
-                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=26540&cert-nonce=5834f98154">Python3: Módulo 2</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=26338&cert-nonce=08878a958d" target="_blank">Python3: Módulo 1</a>
+                    <a href="https://www.cursoemvideo.com/certificates/certificado/?course_id=26540&cert-nonce=5834f98154" target="_blank">Python3: Módulo 2</a>
                 </div>
             </div>
         </section>
